@@ -11,25 +11,55 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
-## Read-And-Delete
+Course Project Shiny Application and Reproducible Pitch
 
-1. Edit YAML front matter
-2. Write using R Markdown
-3. Use an empty line followed by three dashes to separate slides!
+by ezwanderis
 
---- .class #id 
-
-## Slide 2
-
-slide 2
 ---
 
-## Slide 3
+Overview
 
-slide 3
+This slides is a part of a deliverable for the course Developing Data Products as part of the Coursera Data Science Specialization.
+
+The Shiny app is avalilable at: 
+https://ezwanderis.shinyapps.io/CarSelection/
+
+Source code for ui.R and server.R files are available on the GitHub repo: https://github.com/ezwanderis/data-product/
+
+
 ---
 
 
+Web Application functionality
+
+The sites is providing a tools for to select the best car for your trip.
+
+We required you provide your trip detail like distance of your trip and the price od gasoline in your region, it's needed to calculate the Gasoline Expenditure for each car. Next with provide your budget on gasoline, so we can filtered and show the car with has Miles per Gallon(MPG) that below your budget.
+
+Second, you can choose your desire cars characteristic in term of : Cylinders, Displacement, Horse Power and Transmission.
+
+The result contains filters selected cars will show in a table on the main content with using the mtcars dataset from [R].
+
+---
+
+MTCARS Dataset
+
+The data used in the app comes from the Motor Trend Car Road Tests (mtcars) dataset. Let has a look on the mtcars's summary
+
+```{r}
+summary(mtcars)
+```
+
+---
+
+Plot
+
+The relationship between miles per gallon (mpg) and displacement (disp) in the mtcars dataset.
+
+```{r}
+plot()
+
+```
 
 
 
