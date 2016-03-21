@@ -3,23 +3,15 @@ title       : Course Project Shiny Application and Reproducible Pitch
 subtitle    : 
 author      : ezwanderis
 job         : 
-framework   : html5slides        # {io2012, html5slides, shower, dzslides, ...}
-highlighter : highlight.js  # {highlight.js, prettify, highlight}
-hitheme     : tomorrow      # 
-widgets     : []            # {mathjax, quiz, bootstrap}
+framework   : io2012
+highlighter : highlight.js
+hitheme     : tomorrow
+widgets     : []
 mode        : selfcontained 
 knit        : slidify::knit2slides
-github      :
-  user:'ezwanderis'
-  repo:'data-product'
 ---
 
-#Course Project Shiny Application and Reproducible Pitch
-
-##by ezwanderis
-
----
-##Overview
+## Overview
 
 This slides is a part of a deliverable for the course Developing Data Products as part of the Coursera Data Science Specialization.
 
@@ -29,7 +21,7 @@ https://ezwanderis.shinyapps.io/CarSelection/
 Source code for ui.R and server.R files are available on the GitHub repo: https://github.com/ezwanderis/data-product/
 
 ---
-##Web Application functionality
+## Web Application functionality
 
 The sites is providing a tools for to select the best car for your trip.
 
@@ -40,7 +32,7 @@ Second, you can choose your desire cars characteristic in term of : Cylinders, D
 The result contains filters selected cars will show in a table on the main content with using the mtcars dataset from [R].
 
 ---
-##MTCARS Dataset
+## MTCARS Dataset
 The data used in the app comes from the Motor Trend Car Road Tests (mtcars) dataset. Let has a look on the mtcars's summary
 
 ```
@@ -68,9 +60,9 @@ The data used in the app comes from the Motor Trend Car Road Tests (mtcars) data
 ```
 
 ---
-##Plot
+## Plot
 The relationship between miles per gallon (mpg) and displacement (disp) in the mtcars dataset.
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png)
+![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2-1.png)
 
 
 

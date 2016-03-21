@@ -1,45 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset='utf-8'>
-	<title>Course Project Shiny Application and Reproducible Pitch</title>
-	<meta name="description" content="Course Project Shiny Application and Reproducible Pitch">
-	<meta name="author" content="ezwanderis">
-	<meta name="generator" content="slidify" />
-	
-	<!-- LOAD STYLE SHEETS -->
-	<link rel="stylesheet" href="libraries/frameworks/html5slides/default/styles.css">
-	<link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />  <link rel="stylesheet" href = "assets/css/ribbons.css">
+  <title>Course Project Shiny Application and Reproducible Pitch</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Course Project Shiny Application and Reproducible Pitch">
+  <meta name="author" content="ezwanderis">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
   
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
 </head>
-<body style='display: none'>
-	<section class='slides layout-regular template-regular'>
-     <article class="" id="slide-1" style="background:;">
-  <h3>NA</h3>
-  <p>#Course Project Shiny Application and Reproducible Pitch</p>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Course Project Shiny Application and Reproducible Pitch</h1>
+    <h2></h2>
+    <p>ezwanderis<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
 
-<p>##by ezwanderis</p>
-
-</article>
-
-<article class="" id="slide-2" style="background:;">
-  <h3>NA</h3>
-  <p>##Overview</p>
-
-<p>This slides is a part of a deliverable for the course Developing Data Products as part of the Coursera Data Science Specialization.</p>
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Overview</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This slides is a part of a deliverable for the course Developing Data Products as part of the Coursera Data Science Specialization.</p>
 
 <p>The Shiny app is avalilable at: 
 <a href="https://ezwanderis.shinyapps.io/CarSelection/">https://ezwanderis.shinyapps.io/CarSelection/</a></p>
 
 <p>Source code for ui.R and server.R files are available on the GitHub repo: <a href="https://github.com/ezwanderis/data-product/">https://github.com/ezwanderis/data-product/</a></p>
 
-</article>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-<article class="" id="slide-3" style="background:;">
-  <h3>NA</h3>
-  <p>##Web Application functionality</p>
-
-<p>The sites is providing a tools for to select the best car for your trip.</p>
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Web Application functionality</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The sites is providing a tools for to select the best car for your trip.</p>
 
 <p>We required you provide your trip detail like distance of your trip and the price od gasoline in your region, it&#39;s needed to calculate the Gasoline Expenditure for each car. Next with provide your budget on gasoline, so we can filtered and show the car with has Miles per Gallon(MPG) that below your budget.</p>
 
@@ -47,12 +70,16 @@
 
 <p>The result contains filters selected cars will show in a table on the main content with using the mtcars dataset from [R].</p>
 
-</article>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-<article class="" id="slide-4" style="background:;">
-  <h3>NA</h3>
-  <p>##MTCARS Dataset
-The data used in the app comes from the Motor Trend Car Road Tests (mtcars) dataset. Let has a look on the mtcars&#39;s summary</p>
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>MTCARS Dataset</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The data used in the app comes from the Motor Trend Car Road Tests (mtcars) dataset. Let has a look on the mtcars&#39;s summary</p>
 
 <pre><code>##       mpg             cyl             disp             hp       
 ##  Min.   :10.40   Min.   :4.000   Min.   : 71.1   Min.   : 52.0  
@@ -77,23 +104,63 @@ The data used in the app comes from the Motor Trend Car Road Tests (mtcars) data
 ##  Max.   :1.0000   Max.   :5.000   Max.   :8.000
 </code></pre>
 
-</article>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-<article class="" id="slide-5" style="background:;">
-  <h3>NA</h3>
-  <p>##Plot
-The relationship between miles per gallon (mpg) and displacement (disp) in the mtcars dataset.
-<img src="figure/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2"></p>
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Plot</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The relationship between miles per gallon (mpg) and displacement (disp) in the mtcars dataset.
+<img src="assets/fig/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2"></p>
 
-</article>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-  </section>
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Overview'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Web Application functionality'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='MTCARS Dataset'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Plot'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
 </body>
-  <!-- LOAD JAVASCRIPTS  -->
-	<script src='libraries/frameworks/html5slides/default/slides.js'></script>
-	<!-- LOAD HIGHLIGHTER JS FILES -->
-	<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
-	<script>hljs.initHighlightingOnLoad();</script>
-	<!-- DONE LOADING HIGHLIGHTER JS FILES -->
-	 
-	</html>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
